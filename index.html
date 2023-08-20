@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+  <body>
+    <div id="app">
+        <div class="container">
+          <div class="excercise">
+            <h2 class="text-center">TÍNH NGÀY THÁNG NĂM</h2>
+            <div class="form-group ex5__input">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex5--ngay"
+                placeholder="Nhập ngày"
+              />
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex5--thang"
+                placeholder="Nhập tháng"
+              />
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex5--nam"
+                placeholder="Nhập năm"
+              />
+            </div>
+            <div class="ex5__btn my-3">
+              <button type="button" id="btn--homQua" class="btn btn-primary" onclick="prevDay()">
+                Hôm Qua
+              </button>
+              <button type="button" id="btn--ngayMai" class="btn btn-primary" onclick="nextDay()">
+                Ngày Mai
+              </button>
+            </div>
+            <div class="result">
+              <span>Kết quả: </span>
+              <span id="time"></span>
+            </div>
+          </div>
+  
+          <div class="excercise">
+            <h2 class="text-center">TÍNH NGÀY</h2>
+            <div class="form-group ex5__input">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex5--month"
+                placeholder="Nhập Tháng"
+              />
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex5--year"
+                placeholder="Nhập Năm"
+              />
+            </div>
+            <div class="ex5__btn my-3">
+              <button type="button" id="btn--homQua" class="btn btn-primary" onclick="calcDay()">
+                Tính Ngày
+              </button>
+            </div>
+            <div class="result">
+              <span>Kết quả: </span>
+              <span id="day"></span>
+            </div>
+          </div>
+  
+          <div class="excercise">
+            <h2 class="text-center">ĐỌC SỐ</h2>
+            <div class="form-group ex5__input">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="ex6--number"
+                placeholder="Nhập một số"
+              />
+            </div>
+            <div class="ex6__btn my-3">
+              <button type="button" id="btn--homQua" class="btn btn-primary" onclick="readNumber()">
+                Đọc Số
+              </button>
+            </div>
+            <div class="result">
+              <span>Kết quả: </span>
+              <span id="number"></span>
+            </div>
+          </div>
+  
+          <div class="excercise boxShadow">
+            <h2 class="text-center">TÌM SINH VIÊN XA NHẤT</h2>
+            <div>
+              <p class="mb-0">Sinh Viên 1</p>
+              <div class="form-group ex8__input">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="ex8--name1"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoX1"
+                  placeholder="Nhập tọa độ X"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoY1"
+                  placeholder="Nhập tọa độ Y"
+                />
+              </div>
+            </div>
+  
+            <div>
+              <p class="mb-0">Sinh Viên 2</p>
+              <div class="form-group ex8__input">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="ex8--name2"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoX2"
+                  placeholder="Nhập tọa độ X"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoY2"
+                  placeholder="Nhập tọa độ Y"
+                />
+              </div>
+            </div>
+  
+            <div>
+              <p class="mb-0">Sinh Viên 3</p>
+              <div class="form-group ex8__input">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="ex8--name3"
+                  placeholder="Nhập tên"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoX3"
+                  placeholder="Nhập tọa độ X"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoY3"
+                  placeholder="Nhập tọa độ Y"
+                />
+              </div>
+            </div>
+  
+            <div>
+              <p class="mb-0">Trường học</p>
+              <div class="form-group ex8__input">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoX4"
+                  placeholder="Nhập tọa độ X"
+                />
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  id="toaDoY4"
+                  placeholder="Nhập tọa độ Y"
+                />
+              </div>
+            </div>
+  
+            <div class="ex5__btn my-3">
+              <button type="button" id="btn--homQua" class="btn btn-primary" onclick="find()">
+                Tìm
+              </button>
+            </div>
+            <div class="result">
+              <span>Kết quả: </span>
+              <span id="find"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- JS -->
+    <script src="./JS/index.js"></script>
+</body>
+</html>
